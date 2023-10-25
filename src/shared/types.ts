@@ -14,5 +14,5 @@ export interface BenefitType {
 export interface ClasseType {
   name: string,
   description?: string,
-  imgae: string,
+  image: string,
 }
