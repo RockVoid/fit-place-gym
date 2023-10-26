@@ -80,7 +80,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul>
+          <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item: ClasseType, index) => (
               <Classe
                 key={`${item.name}-${index}`}
