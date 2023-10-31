@@ -70,7 +70,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles} 
                 type="text" 
-                placeholder="NAME"
+                placeholder="NOME"
                 {
                   ...register("name", {
                     required: true,
@@ -80,8 +80,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.name && (
                 <p className="mt-1 text-primary-500">
-                  {errors.name.type === "required" && "This Field is required."}
-                  {errors.name.type === "maxLength" && "Max length is 100 char."}
+                  {errors.name.type === "required" && "Este campo é obrigatório."}
+                  {errors.name.type === "maxLength" && "Máximo 100 caracteres."}
                 </p>
               )}
 
@@ -98,8 +98,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.email && (
                 <p className="mt-1 text-primary-500">
-                  {errors.email.type === "required" && "This field is required."}
-                  {errors.email.type === "pattern" && "Invalid email format."}
+                  {errors.email.type === "required" && "Este campo é obrigatório."}
+                  {errors.email.type === "pattern" && "Formato de e-mail inválido."}
                 </p>
               )}
 
@@ -117,8 +117,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.message && (
                 <p className="mt-1 text-primary-500">
-                  {errors.message.type === "required" && "This field is required"}
-                  {errors.message.type === "maxLength" && "Max length is 200 char."}
+                  {errors.message.type === "required" && "Este campo é obrigatório"}
+                  {errors.message.type === "maxLength" && "Máximo 200 caracteres."}
                 </p>
               )}
               <button 
