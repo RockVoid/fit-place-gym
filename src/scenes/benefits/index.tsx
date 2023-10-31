@@ -44,7 +44,7 @@ const benefits: Array<BenefitType> = [
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="beneficios" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -59,11 +59,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <HText>MORE THAN JUST GYM.</HText>
+          <HText>Mais do que uma academia.</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            Cuidamos de cada um dos nosso membros com a devida atenção.
+            Trabalhamos apenas com estrutura e profissionais corretos, que
+            buscam o melhor resultado para você.
           </p>
         </motion.div>
 
@@ -106,8 +106,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    Milhares de membros estão ficando no{" "}
+                    <span className="text-primary-500">SHAPE</span>
                   </HText>
                 </motion.div>
               </div>
@@ -124,25 +124,23 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
 '             <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+                Sabemos que para ter resultados. É preciso um treino de qualidade, 
+                aliado a uma boa alimentação e uma constância diária. Para isso oferecemos
+                personais e recomendações de nutricionistas. Assim possibilitando 
+                nossos clientes a alcançarem sua melhor forma!
               </p>
               <p className="mb-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+                É importante que tenhamos a sensação de segurança ao estar
+                executando qualquer tipo de treino, somente com profissional e 
+                estrutura correta podemos ter a certeza de estarmos executando 
+                as atividades corretas. E é isso que a EvoGym trás para você! 
               </p>
             </motion.div>
 
             <div className="relative mt-16">
               <div className="before:absolute">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Fazer Parte!
                 </ActionButton>
               </div>
             </div>

@@ -41,9 +41,9 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              Uma academia completa, com equipamento e estrutura sem iguais. 
+              Profissionais de primeira qualidade para garantir a você os 
+              melhores resultados no tempo certo!
             </p>
           </motion.div>
 
@@ -59,14 +59,14 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Fazer parte!
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContacUs)}
               href={`#${SelectedPage.Home}`}
             >
-              <p>Learn More</p>
+              <p>Saiba mais</p>
             </AnchorLink>
           </motion.div>
         </div>

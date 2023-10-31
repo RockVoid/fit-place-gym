@@ -1,47 +1,33 @@
 import { SelectedPage, ClasseType } from "@/shared/types";
 import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
+import muayThai from "@/assets/muay-thai.jpg";
 import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
 import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Classe from "./Class";
 
 const classes: Array<ClasseType> = [
   {
-    name: "Weight Training Classes",
+    name: "Musculação",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "A musculação é uma atividade física que estimula todo o sistema muscular. É um conjunto de exercícios baseados na repetição de cargas progressivas. Os movimentos são feitos com equipamentos específicos, como máquinas, pesos livres, borrachas, cabos  e acessórios diversos.",
     image: image1,
   },
   {
-    name: "Yoga Classes",
-    image: image2,
+    name: "Aulas de Muay Thai",
+    image: muayThai,
   },
   {
-    name: "Ab Core Classes",
+    name: "Danças",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "A dança ajuda no condicionamento fisico e na liberação de endorfina.",
     image: image3,
   },
   {
-    name: "Adventure Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image4,
-  },
-  {
-    name: "Fitness Classes",
+    name: "Treinos Funcionais",
     image: image5,
-  },
-  {
-    name: "Training Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image6,
-  },
+  }
 ]
 
 type Props = {
@@ -51,7 +37,7 @@ type Props = {
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <section
-      id="ourclasses"
+      id="nossasaulas"
       className="w-full bg-primary-100 py-40"
     >
       <motion.div
@@ -69,18 +55,18 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+            <HText>NOSSAS AULAS</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Pra quem curte puxar ferro, contamos com aulas de musculação.
+              Já pra vocẽ que curte dançar, temos aulas de dança.
+              Pra quem gosta de se movimentar, contamos com os treinos funcionais, e
+              pra quem curte esportes de combate, temos o Muay Thai.
             </p>
           </div>
         </motion.div>
 
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
+          <ul className="w-[1400px] whitespace-nowrap">
             {classes.map((item: ClasseType, index) => (
               <Classe
                 key={`${item.name}-${index}`}

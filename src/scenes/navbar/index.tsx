@@ -35,25 +35,25 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) =>
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
-                  page="Benefits"
+                  page="Beneficios"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 />
                 <Link
-                  page="Our Classes"
+                  page="Nossas Aulas"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 /> 
                 <Link
-                  page="Contact Us"
+                  page="Contato"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                 /> 
               </div>
               <div className={`${flexBetween} gap-8`}>
-                <p>Sign In</p>
+                <p>Assine</p>
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Become a member
+                  Torne-se parte
                 </ActionButton>
               </div>
             </div>
@@ -83,17 +83,17 @@ export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) =>
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Benefits"
+              page="Beneficios"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="Nossas aulas"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             /> 
             <Link
-              page="Contact Us"
+              page="Contato"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
